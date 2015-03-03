@@ -3,14 +3,14 @@ Insight Data Engineering - Coding Challenge
 
 One of the first problems you’ll encounter in data engineering is Word Count, which takes in a text file or set of text files from a directory and outputs the number of occurrences for each word.  For example, Word Count on a file containing the following passage:
 
-So call a big meeting,  
+> So call a big meeting,  
 Get everyone out out,  
 Make every Who holler,  
 Make every Who shout shout.  
 
 would return:
 
-a			1  
+	a			1  
 big			1  
 call			1  
 every			2  
@@ -24,18 +24,18 @@ shout			2
 so			1  
 who			2  
 
-The first part of the coding challenge is to implement your own version of Word Count that counts all the words from the text files contained in a directory named `wc_input` and outputs the counts to a file named wc_result.txt,which is placed in a directory named wc_output.
+The first part of the coding challenge is to implement your own version of Word Count that counts all the words from the text files contained in a directory named `wc_input` and outputs the counts to a file named `wc_result.txt`, which is placed in a directory named `wc_output`.
 
 Another common problem is the Running Median - which keeps track of the median for a stream of numbers, updating the median for each new number.  The second part of the coding challenge is to implement a running median for the number of words per line of text.  Consider each line in a text file as a new stream of words, and find the median number of words per line, up to that point (i.e. the median for that line and all the previous lines).  For example, the first line of the passage
 
-So call a big meeting,  
+> So call a big meeting,  
 Get everyone out out,  
 Make every Who holler,  
 Make every Who shout shout.  
 
 has 5 words so the running median for the first line is simply 5.  Since the second line has 4 words, the running median for the first two lines is the median of {4, 5} = 4.5 (since the median of an even set of numbers is defined as the mean of the middle two elements after sorting).  After three lines, the running median would be the median of {4, 4, 5} = 4, and after all four lines the running median is the median of {4, 4, 5, 5} = 4.5.  Thus, the correct output for the running median program for the above passage is:
 
-5.0  
+	5.0  
 4.5  
 4.0  
 4.5  
