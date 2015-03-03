@@ -48,3 +48,19 @@ You may write your solution in any one of the following programming languages: C
 
 As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.  For this reason, it’s important to ensure that your solution works well for small and large text files, rather than just the simple examples above. 
 
+
+## FAQ
+
+* Do I need to account for punctuation in the word count?
+Yes, punctuation should be removed so `shout` and `shout.` should both be counted together.
+
+* Should I count capitalization differently in the word count?
+No, both `Who` and `who` should be counted together.
+
+* What if I need to load a library or dependency for my program to run?
+Make sure that your `run.sh` script loads all the dependencies for your program.  These dependencies should also be well documented in your Markdown README.
+
+* Does the `run.sh` script need to be a Bash script (i.e. on Linux or Mac OSX)?
+Yes - Unix based systems like Linux and MacOSX are the standard in the field of Data Engineering - and the system needs to be compiled and tested on a Unix based system.  With that said, you can use emulators like Cygwin if you only have access to a Windows system.
+
+
