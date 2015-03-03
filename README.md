@@ -61,6 +61,6 @@ No, both `Who` and `who` should be counted together.
 Make sure that your `run.sh` script loads all the dependencies for your program.  These dependencies should also be well documented in your Markdown README.
 
 * Does the `run.sh` script need to be a Bash script (i.e. on Linux or Mac OSX)?
-Yes - Unix based systems like Linux and MacOSX are the standard in the field of Data Engineering - and the system needs to be compiled and tested on a Unix based system.  With that said, you can use emulators like Cygwin if you only have access to a Windows system.
+Yes - Unix based systems like Linux and MacOSX are the standard in the field of Data Engineering - and the system needs to be compiled and tested on a Unix based system.  With that said, you can use emulators like [Cygwin](https://www.cygwin.com/) if you only have access to a Windows system.
 
 
