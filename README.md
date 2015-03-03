@@ -1,4 +1,4 @@
-Insight Data Engineering Fellows Program - Coding Challenge
+Insight Data Engineering - Coding Challenge
 ===========================================================
 
 One of the first problems you’ll encounter in data engineering is Word Count, which takes in a text file or set of text files from a directory and outputs the number of occurrences for each word.  For example, Word Count on a file containing the following passage:
@@ -10,8 +10,9 @@ Make every Who shout shout.
 
 would return:
 
-a		1
+a		1  
 big		1
+
 call		1
 every		2
 everyone	1
