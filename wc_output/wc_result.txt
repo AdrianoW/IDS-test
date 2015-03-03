@@ -11,4 +11,3 @@ out		2
 shout		2
 so		1
 who		1
-
