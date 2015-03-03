@@ -11,7 +11,7 @@ chmod a+x my_running_median.py
 
 # finally I'll execute my programs, with the input directory wc_input and output files directory wc_output
 python my_word_count.py ./wc_input ./wc_output/wc_result.txt
-python my_running_median.py ./wc_input ./wc_output/running_median_result.txt
+python my_running_median.py ./wc_input ./wc_output/med_result.txt
 
 
 
