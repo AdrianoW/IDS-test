@@ -80,7 +80,7 @@ Hello brave new world
 
 and another file named `B.txt` with the following
 
-> Foo
+> Foo  
 Bar
 
 then the running median should process `a.txt` first, then `b.txt`.  As each line is read the running set will be
