@@ -51,7 +51,7 @@ As a data engineer, it’s important that you write clean, well-documented code 
 
 ## FAQ
 
-* Do I need to account for punctuation in the word count?  
+* *Do I need to account for punctuation in the word count?*  
 Yes, punctuation should be removed so `shout` and `shout.` should both be counted together.
 
 * Should I count capitalization differently in the word count?  
@@ -64,6 +64,8 @@ Make sure that your `run.sh` script loads all the dependencies for your program.
 Yes - Unix based systems like Linux and MacOSX are the standard in the field of Data Engineering - and the system needs to be compiled and tested on a Unix based system.  With that said, you can use emulators like [Cygwin](https://www.cygwin.com/) if you only have access to a Windows system.
 
 * Can I use an IDE like Eclipse to write my program?  
-Yes, you can use what ever tools you want -  as long as your `run.sh` script works accurately
+Yes, you can use what ever tools you want -  as long as your `run.sh` script correctly runs the relevant target files and creates the `wc_result.txt` and `med_result.txt` files in the `wc_output` directory.
 
+* What should be in the `wc_input` directory?  
+You can put any text file you want in the directory.  In fact, this could be quite helpful for testing your solutions.
 
