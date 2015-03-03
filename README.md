@@ -40,7 +40,7 @@ has 5 words so the running median for the first line is simply 5.  Since the sec
 	4.0  
 	4.5  
 
-We'd like you to implement your own version of this running median that calculates the median number of words per line, for each line of the text files in the `wc_input` directory.  If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named `Hello.txt` should be processed before a file named `world.txt`.  The resulting running median for each line should then be outputted to a text file named `med_result.txt` in the `wc_output` directory.
+We'd like you to implement your own version of this running median that calculates the median number of words per line, for each line of the text files in the `wc_input` directory.  If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named `hello.txt` should be processed before a file named `world.txt`.  The resulting running median for each line should then be outputted to a text file named `med_result.txt` in the `wc_output` directory.
 
 You may write your solution in any one of the following programming languages: C, C++, Clojure, Java, Python, Ruby, or Scala - then submit a link to a Github repo with your source code.  In addition to the source code, the top-most directory of your repo must include `wc_input` and `wc_output` directories, and a shell script named `run.sh` that compiles and runs the Word Count and Running Median programs.  If your solution requires additional libraries or dependencies, the shell script should load them first so that your programs can be run on any system just by running `run.sh`.  See the figure below for the required structure of the top-most directory in your repo, or simply clone this repo.
 
@@ -68,4 +68,38 @@ Yes, you can use what ever tools you want -  as long as your `run.sh` script cor
 
 * *What should be in the `wc_input` directory?*  
 You can put any text file you want in the directory.  In fact, this could be quite helpful for testing your solutions.
+
+* *What should the output of the running median be?*  
+For simplicity, please output the running median as a double with only 1 digit after the decimal (i.e. 2.0 instead of 2).  In the event that you need to round, simply truncate the answer (i.e. 2/3 should be 0.6).
+
+* *How does the running median work for multiple files?*  
+All of the files should be processed as if they come from a single stream, ordered in alphabetical order as given by the ASCII code.  For example, if you had a file name `A.txt` with the following lines
+
+> Hello world  
+Hello brave new world
+
+and another file named `B.txt` with the following
+
+> Foo
+Bar
+
+then the running median should process `a.txt` first, then `b.txt`.  As each line is read the running set will be
+
+	{2}  
+	{2, 4}  
+	{1, 2, 4}  
+	{1, 1, 2, 4}
+
+to give a resulting running median of
+
+	2.0
+	3.0
+	2.0  
+	1.5  
+
+This would continue in alphabetical order until the all the files in `wc_input` have been processed.  For simiplicity, you may assume that all the text files are lowercase.
+
+
+
+
 
