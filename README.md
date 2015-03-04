@@ -24,7 +24,7 @@ would return:
 	so			1  
 	who			2  
 
-The first part of the coding challenge is to implement your own version of Word Count that counts all the words from the text files contained in a directory named `wc_input` and outputs the counts to a file named `wc_result.txt`, which is placed in a directory named `wc_output`.
+The first part of the coding challenge is to implement your own version of Word Count that counts all the words from the text files contained in a directory named `wc_input` and outputs the counts (in alphabetical order) to a file named `wc_result.txt`, which is placed in a directory named `wc_output`.
 
 Another common problem is the Running Median - which keeps track of the median for a stream of numbers, updating the median for each new number.  The second part of the coding challenge is to implement a running median for the number of words per line of text.  Consider each line in a text file as a new stream of words, and find the median number of words per line, up to that point (i.e. the median for that line and all the previous lines).  For example, the first line of the passage
 
@@ -55,7 +55,13 @@ As a data engineer, it’s important that you write clean, well-documented code 
 Yes, punctuation should be removed so `shout` and `shout.` should both be counted together.
 
 * *Should I count capitalization differently in the word count?*  
-No, both `Who` and `who` should be counted together.
+No, both `Who` and `who` should be counted together.  For simplicity, the word count should return an alphabetical list of lowercase words (e.g. `who	2`).
+
+* *What should the format of the word count be?*  
+Please try to match the above example, by listing the words in alphabetical order, with a tab between the word and count, and each word separated by a newline.
+
+* *How should hyphens be handled?*  
+For simplicity, please remove hyphens so that `hi-lite` is counted as `hilite`.
 
 * *What if I need to load a library or dependency for my program to run?*  
 Make sure that your `run.sh` script loads all the dependencies for your program.  These dependencies should also be well documented in your Markdown README.
