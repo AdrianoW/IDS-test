@@ -51,6 +51,8 @@ As a data engineer, it’s important that you write clean, well-documented code 
 
 ## FAQ
 
+Here are some common questions we've received.  If you have additional questions, feel free fork this repo, add them to the README.md, then issue a pull request.  Alternatively, you can email info@insightdataengineering.com and we'll add the answers.
+
 * *Do I need to account for punctuation in the word count?*  
 Yes, punctuation should be removed so `shout` and `shout.` should both be counted together.
 
