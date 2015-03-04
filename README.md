@@ -76,7 +76,16 @@ Yes, you can use what ever tools you want -  as long as your `run.sh` script cor
 You can put any text file you want in the directory.  In fact, this could be quite helpful for testing your solutions.
 
 * *What should the output of the running median be?*  
-For simplicity, please output the running median as a double with only 1 digit after the decimal (i.e. 2.0 instead of 2).  In the event that you need to round, simply truncate the answer (i.e. 2/3 should be 0.6).
+For simplicity, please output the running median as a double with only 1 digit after the decimal (i.e. 2.0 instead of 2).  In the event that you need to round, simply truncate the answer (i.e. 2/3 should be 0.6).  The running median for each line of text should be separated by newlines as shown in the example above.
+
+* *How should blank lines be handled in the running median?*  
+Blank lines should be considered as lines with 0 words, so the runnning set for
+
+> Hello world  
+  
+Brave new world  
+
+should be {2, 0, 3}.
 
 * *How does the running median work for multiple files?*  
 All of the files should be processed as if they come from a single stream, ordered in alphabetical order as given by the ASCII code.  For example, if you had a file name `A.txt` with the following lines
