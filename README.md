@@ -92,12 +92,12 @@ should be {2, 0, 3} with a corresponding result of
 	2
 
 * *How does the running median work for multiple files?*  
-All of the files should be processed as if they come from a single stream, ordered in alphabetical order as given by the ASCII code.  For example, if you had a file name `A.txt` with the following lines
+All of the files should be processed as if they come from a single stream, ordered in alphabetical order as given by the ASCII code.  For example, if you had a file name `a.txt` with the following lines
 
 > Hello world  
 Hello brave new world
 
-and another file named `B.txt` with the following
+and another file named `b.txt` with the following
 
 > Foo  
 Bar
