@@ -85,7 +85,11 @@ Blank lines should be considered as lines with 0 words, so the runnning set for
 > 		  
 > Brave new world  
 
-should be {2, 0, 3}.
+should be {2, 0, 3} with a corresponding result of
+
+	2  
+	1  
+	2
 
 * *How does the running median work for multiple files?*  
 All of the files should be processed as if they come from a single stream, ordered in alphabetical order as given by the ASCII code.  For example, if you had a file name `A.txt` with the following lines
