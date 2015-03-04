@@ -82,8 +82,8 @@ For simplicity, please output the running median as a double with only 1 digit a
 Blank lines should be considered as lines with 0 words, so the runnning set for
 
 > Hello world  
-  
-Brave new world  
+> 		  
+> Brave new world  
 
 should be {2, 0, 3}.
 
