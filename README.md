@@ -68,6 +68,8 @@ For simplicity, please remove hyphens so that `hi-lite` is counted as `hilite`.
 * *Do I need to account for complicated Unicode characters?*  
 No, you may assume that all of the characters are conventional, ASCII characters.
 
+* *Should I check if the files in the input directory are text files or non text files(binary)?*
+
 * *What if I need to load a library or dependency for my program to run?*  
 Make sure that your `run.sh` script loads all the dependencies for your program.  These dependencies should also be well documented in your Markdown README.
 
