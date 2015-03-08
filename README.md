@@ -65,8 +65,14 @@ Please try to match the above example, by listing the words in alphabetical orde
 * *How should hyphens be handled?*  
 For simplicity, please remove hyphens so that `hi-lite` is counted as `hilite`.
 
+* *Do I need to account for complicated Unicode characters?*  
+No, you may assume that all of the characters are conventional, ASCII characters.
+
 * *What if I need to load a library or dependency for my program to run?*  
 Make sure that your `run.sh` script loads all the dependencies for your program.  These dependencies should also be well documented in your Markdown README.
+
+* *Do I need separate programs for WordCount and Running Median?*  
+No, you may use a single combined program or many programs, as you want as long as they are all executed by the `run.sh` script.
 
 * *Does the `run.sh` script need to be a Bash script (i.e. on Linux or Mac OSX)?*  
 Yes - Unix based systems like Linux and MacOSX are the standard in the field of Data Engineering - and the system needs to be compiled and tested on a Unix based system.  With that said, you can use emulators like [Cygwin](https://www.cygwin.com/) if you only have access to a Windows system.
