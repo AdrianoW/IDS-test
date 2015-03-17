@@ -53,6 +53,9 @@ As a data engineer, it’s important that you write clean, well-documented code 
 
 Here are some common questions we've received.  If you have additional questions, feel free fork this repo, add them to the README.md, then issue a pull request.  Alternatively, you can email info@insightdataengineering.com and we'll add the answers.
 
+* *Which Github link should I submit?*  
+You should submit the URL for the top-level root of your repository.  For example, this repo would be submitted by copying the URL `https://github.com/InsightDataScience/cc-example` into the appropriate field on the application.  Please do NOT try to submit your coding challenge using a pull request, which will make your source code publicly available.  
+
 * *Do I need to account for punctuation in the word count?*  
 Yes, punctuation should be removed so `shout` and `shout.` should both be counted together.
 
@@ -128,6 +131,10 @@ to give a resulting running median of
 	1.5  
 
 This would continue in alphabetical order until the all the files in `wc_input` have been processed.  For simiplicity, you may assume that all the text files are lowercase.
+
+* *Do I need to use MapReduce or Hadoop?*  
+No, while you should make sure the algorithms you use scale for larger text files, you do not need to use Hadoop or the MapReduce programming paradigm.  
+
 
 
 
