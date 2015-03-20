@@ -63,10 +63,13 @@ Yes, punctuation should be removed so `shout` and `shout.` should both be counte
 No, both `Who` and `who` should be counted together.  For simplicity, the word count should return an alphabetical list of lowercase words (e.g. `who	2`).
 
 * *What should the format of the word count be?*  
-Please try to match the above example, by listing the words in alphabetical order, with a tab between the word and count, and each word separated by a newline.
+Please try to match the above example, by listing the words in **alphabetical** order, with a tab between the word and count, and each word separated by a newline.
 
 * *How should hyphens be handled?*  
 For simplicity, please remove hyphens so that `hi-lite` is counted as `hilite`.
+
+* *How should conjunctions like `we're` or `haven't` be handled?*  
+For simplicity, please remove apostrophes so that `we're` and `haven't` are counted as `were` and `havent`.
 
 * *Do I need to account for digits (e.g 0-9)?*  
 No, for simplicity you may assume that the text files do not contain any digits.  
