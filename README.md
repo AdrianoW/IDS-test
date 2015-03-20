@@ -68,11 +68,17 @@ Please try to match the above example, by listing the words in alphabetical orde
 * *How should hyphens be handled?*  
 For simplicity, please remove hyphens so that `hi-lite` is counted as `hilite`.
 
+* *Do I need to account for digits (e.g 0-9)?*  
+No, for simplicity you may assume that the text files do not contain any digits.  
+
 * *Do I need to account for complicated Unicode characters?*  
 No, you may assume that all of the characters are conventional, ASCII characters.
 
 * *Should I check if the files in the input directory are text files or non text files(binary)?*
 No, for simplicity you may assume that all of the files in the input directory are standard text files.  
+
+* *Will our program need to look for text files in any subdirectories of the `wc_input` directory?*  
+No, for simplicity you may assume that the `wc_input` directory only contains text files, with no subdirectories.  
 
 * *What if I need to load a library or dependency for my program to run?*  
 Make sure that your `run.sh` script loads all the dependencies for your program.  These dependencies should also be well documented in your Markdown README.
