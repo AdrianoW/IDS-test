@@ -69,6 +69,7 @@ Please try to match the above example, by listing the words in **alphabetical** 
 For simplicity, please remove hyphens so that `hi-lite` is counted as `hilite`.
 
 * *Should words that are split onto two lines using hyphenation be counted as one word (or two separate words) for the word-counting program?*  
+For simplicity, you may assume that all text files do not have any hyphens for splitting words across two different lines.  
 
 * *How should conjunctions like `we're` or `haven't` be handled?*  
 For simplicity, please remove apostrophes so that `we're` and `haven't` are counted as `were` and `havent`.
