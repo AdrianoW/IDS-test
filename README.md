@@ -46,7 +46,7 @@ You may write your solution in any one of the following programming languages: C
 
 ![Example Repo Structure](images/directory-pic.png)
 
-As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.  For this reason, it’s important to ensure that your solution works well for small and large text files, rather than just the simple examples above. 
+As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.  For this reason, it’s important to ensure that your solution works well for small and large text files, rather than just the simple examples above.  For example, your solution should be able to process large files like the text of the book "War and Peace" without taking much longer than processing the small files.
 
 
 ## FAQ
