@@ -1,32 +1,30 @@
 Insight Data Engineering - Coding Challenge
 ===========================================================
 
-For this coding challenge, you will develop tools that could help analyze the community of Twitter users.  For simplicity, the features we will build are primitive, but you could easily build more complicated features on top of these. 
+For this coding challenge, you will develop tools that could help analyze the community of Twitter users.  For simplicity, the features we will build are primitive, but you could easily build more complicated features on top of these.   
 
-One of the first problems you’ll encounter in data engineering is Word Count, which takes in a text file or set of text files from a directory and outputs the number of occurrences for each word.  For example, Word Count on a file containing the following passage:
+This challenge consists of two features:
 
-> So call a big meeting,  
-Get everyone out out,  
-Make every Who holler,  
-Make every Who shout shout.  
+1. Calculate the total number of times each word has been tweeted.
+2. Calculate the median number of unique words per tweet, and update this median as tweets come in. 
 
-would return:
+For example, suppose that 5 separate tweets come in
 
-	a			1
-	big			1  
-	call		1  
-	every		2  
-	everyone	1  
-	get			1  
-	holler		1  
-	make		2  
-	meeting		1  
-	out			2  
-	shout		2  
-	so			1  
-	who			2  
+> My latest #Gartner research: "Lessons Learned From Advanced #Analytics in Action" http://ow.ly/P4heo  #bigdata #GartnerBI  
+Is #BigData Finally the Answer to End Poverty? @LavanyaRathnam http://ow.ly/O8gt3  #Analytics  
+Interview: Xia Wang, AstraZeneca on #BigData and the Promise of Effective Healthcare #KDN http://ow.ly/OT2Uj  
+Guest post on How to Use #BigData to Better Understand Your Customers! #DataScience http://ow.ly/P43ef  
+Big data is not just for BIG business. On how #bigdata is being deployed for small businesses: http://bddy.me/1BZukB3  @CXOtodayAlerts #SMB  
+
+
+
+
 
 The first part of the coding challenge is to implement your own version of Word Count that counts all the words from the text files contained in a directory named `wc_input` and outputs the counts (in alphabetical order) to a file named `wc_result.txt`, which is placed in a directory named `wc_output`.
+
+
+
+
 
 Another common problem is the Running Median - which keeps track of the median for a stream of numbers, updating the median for each new number.  The second part of the coding challenge is to implement a running median for the number of words per line of text.  Consider each line in a text file as a new stream of words, and find the median number of words per line, up to that point (i.e. the median for that line and all the previous lines).  For example, the first line of the passage
 
