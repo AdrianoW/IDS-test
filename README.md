@@ -8,13 +8,13 @@ This challenge consists of two features:
 1. Calculate the total number of times each word has been tweeted.
 2. Calculate the median number of unique words per tweet, and update this median as tweets come in. 
 
-For example, suppose that 5 separate tweets come in
+For example, suppose that we have 5 separate tweets come in
 
-> My latest #Gartner research: "Lessons Learned From Advanced #Analytics in Action" http://ow.ly/P4heo  #bigdata #GartnerBI  
-Is #BigData Finally the Answer to End Poverty? @LavanyaRathnam http://ow.ly/O8gt3  #Analytics  
-Interview: Xia Wang, AstraZeneca on #BigData and the Promise of Effective Healthcare #KDN http://ow.ly/OT2Uj  
-Guest post on How to Use #BigData to Better Understand Your Customers! #DataScience http://ow.ly/P43ef  
-Big data is not just for BIG business. On how #bigdata is being deployed for small businesses: http://bddy.me/1BZukB3  @CXOtodayAlerts #SMB  
+- My latest #Gartner research: "Lessons Learned From Advanced #Analytics in Action" http://ow.ly/P4heo  #bigdata #GartnerBI  
+- Is #BigData Finally the Answer to End Poverty? @LavanyaRathnam http://ow.ly/O8gt3  #Analytics  
+- Interview: Xia Wang, AstraZeneca on #BigData and the Promise of Effective Healthcare #KDN http://ow.ly/OT2Uj  
+- Guest post on How to Use #BigData to Better Understand Your Customers! #DataScience http://ow.ly/P43ef  
+- Big data is not just for BIG business. On how #bigdata is being deployed for small businesses: http://bddy.me/1BZukB3  @CXOtodayAlerts #SMB  
 
 
 
