@@ -10,7 +10,7 @@ This challenge is to implement two features:
 1. Calculate the total number of times each word has been tweeted.
 2. Calculate the median number of unique words per tweet, and update this median as tweets come in. 
 
-For example, suppose the 3 following tweets come in, one after the other
+For example, suppose the following three tweets come in, one after the other
 
 - is #bigdata finally the answer to end poverty? @lavanyarathnam http://ow.ly/o8gt3  #analytics  
 - interview: xia wang, astrazeneca on #bigdata and the promise of effective healthcare #kdn http://ow.ly/ot2uj  
@@ -18,43 +18,43 @@ For example, suppose the 3 following tweets come in, one after the other
 
 The first feature would produce the following total count for each word:
 
-	#analytics  1
-	#bigdata 	3
-	#kdn 	1
-	#smb 	1
-	@cxotodayalerts 	1
-	@lavanyarathnam 	1
-	and 	1
-	answer  	1
-	astrazeneca 	1
-	being 	1
-	big 	2
-	business. 	1 
-	businesses: 	1
-	data 	1
-	deployed 	1
-	effective 	1
-	end 	1
-	finally 	1
-	for 	2
-	healthcare 	1
-	how 	1
+	#analytics  				1
+	#bigdata 					3
+	#kdn 						1
+	#smb 						1
+	@cxotodayalerts 			1
+	@lavanyarathnam 			1
+	and 						1
+	answer  					1
+	astrazeneca 				1
+	being 						1
+	big 						2
+	business. 					1 
+	businesses: 				1
+	data 						1
+	deployed 					1
+	effective 					1
+	end 						1
+	finally 					1
+	for 						2
+	healthcare 					1
+	how 						1
 	http://bddy.me/1bzukb3  	1
-	http://ow.ly/o8gt3  	1
-	http://ow.ly/ot2uj  	1
-	interview: 	1
-	is  	3
-	just 	1
-	not 	1
-	of 		1
-	on 		2
-	poverty? 	1
-	promise 	1
-	small 	1
-	the  	2
-	to  	1
-	wang,	1
-	xia 	1
+	http://ow.ly/o8gt3 	 		1
+	http://ow.ly/ot2uj  		1
+	interview: 					1
+	is  						3
+	just 						1
+	not 						1
+	of 							1
+	on 							2
+	poverty? 					1
+	promise 					1
+	small 						1
+	the  						2
+	to  						1
+	wang,						1
+	xia 						1
 
 while the second feature would produce the following output:
 
