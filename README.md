@@ -91,6 +91,19 @@ You may write your solution in any mainstream programming language such as C, C+
 
 ![Example Repo Structure](images/directory-pic.png)
 
+Alternatively, here is example output of the 'tree' command:
+
+	├── README.md  
+	├── run.sh  
+	├── src  
+	│   ├── median_unique.py  
+	│   └── words_tweeted.py  
+	├── tweet_input  
+	│   └── tweets.txt  
+	└── tweet_output  
+	    ├── ft1.txt  
+	    └── ft2.txt  
+
 As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.  For this reason, it’s important to ensure that your solution works well for a huge number of tweets, rather than just the simple examples above.  For example, your solution should be able to process a file containing every tweet from the last month without taking much longer than processing only the last hour of tweets.  For more details about the implementation, please refer to FAQ below or email us at info@insightdataengineering.com
 
 
