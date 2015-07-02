@@ -67,17 +67,20 @@ since the number of unique words in each tweet is 11, 14, and 17 respectively.  
 - Each tweet only contains lowercase letters, numbers, and ASCII characters like ':', '@', and '#'.
 - A word is defined as anything separated by whitespace. 
 
-Note that the output of the first feature is outputted in order according to the [ASCII Code](http://www.ascii-code.com).  Also recall, that the median of a set with an even number of items is the mean of the two middle elements (e.g. the median of {11, 14} is 12.5).
+Note that the output of the first feature is outputted in order, according to the [ASCII Code](http://www.ascii-code.com).  Also recall, that the median of a set with an even number of items is the mean of the two middle elements (e.g. the median of {11, 14} is 12.5).
 
 ## Details of Implementation
 
-We'd like you to implement your own version of this running median that calculates the median number of words per line, for each line of the text files in the `wc_input` directory.  If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named `hello.txt` should be processed before a file named `world.txt`.  The resulting running median for each line should then be outputted to a text file named `med_result.txt` in the `wc_output` directory.
+We'd like you to implement your own version of these features 
 
-You may write your solution in any one of the following programming languages: C, C++, Clojure, Java, Python, Ruby, or Scala - then submit a link to a Github repo with your source code.  In addition to the source code, the top-most directory of your repo must include `wc_input` and `wc_output` directories, and a shell script named `run.sh` that compiles and runs the Word Count and Running Median programs.  If your solution requires additional libraries or dependencies, the shell script should load them first so that your programs can be run on any system just by running `run.sh`.  See the figure below for the required structure of the top-most directory in your repo, or simply clone this repo.
+
+ for each line of the text files in the `wc_input` directory.  If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named `hello.txt` should be processed before a file named `world.txt`.  The resulting running median for each line should then be outputted to a text file named `med_result.txt` in the `wc_output` directory.
+
+You may write your solution in any mainstream programming language such as C, C++, C#, Clojure, Haskell, Java, Python, Ruby, or Scala - then submit a link to a Github repo with your source code.  In addition to the source code, the top-most directory of your repo must include `tweet_input` and `tweet_output` directories, and a shell script named `run.sh` that compiles and runs the program(s) that implement these features.  If your solution requires additional libraries, environments, or dependencies, you must specify these in your README documentation.  See the figure below for the required structure of the top-most directory in your repo, or simply clone this repo.
 
 ![Example Repo Structure](images/directory-pic.png)
 
-As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.  For this reason, it’s important to ensure that your solution works well for small and large text files, rather than just the simple examples above.  For example, your solution should be able to process large files like the text of the book "War and Peace" without taking much longer than processing the small files.
+As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.  For this reason, it’s important to ensure that your solution works well for a huge number of tweets, rather than just the simple examples above.  For example, your solution should be able to process a file containing every tweet from the last month without taking much longer than processing only the last hour of tweets.
 
 
 ## FAQ
