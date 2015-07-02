@@ -3,42 +3,73 @@ Insight Data Engineering - Coding Challenge
 
 For this coding challenge, you will develop tools that could help analyze the community of Twitter users.  For simplicity, the features we will build are primitive, but you could easily build more complicated features on top of these.   
 
-This challenge consists of two features:
+## Challenge Summary
+
+This challenge is to implement two features:
 
 1. Calculate the total number of times each word has been tweeted.
 2. Calculate the median number of unique words per tweet, and update this median as tweets come in. 
 
-For example, suppose that we have 5 separate tweets come in
+For example, suppose the 3 following tweets come in, one after the other
 
-- My latest #Gartner research: "Lessons Learned From Advanced #Analytics in Action" http://ow.ly/P4heo  #bigdata #GartnerBI  
-- Is #BigData Finally the Answer to End Poverty? @LavanyaRathnam http://ow.ly/O8gt3  #Analytics  
-- Interview: Xia Wang, AstraZeneca on #BigData and the Promise of Effective Healthcare #KDN http://ow.ly/OT2Uj  
-- Guest post on How to Use #BigData to Better Understand Your Customers! #DataScience http://ow.ly/P43ef  
-- Big data is not just for BIG business. On how #bigdata is being deployed for small businesses: http://bddy.me/1BZukB3  @CXOtodayAlerts #SMB  
+- is #bigdata finally the answer to end poverty? @lavanyarathnam http://ow.ly/o8gt3  #analytics  
+- interview: xia wang, astrazeneca on #bigdata and the promise of effective healthcare #kdn http://ow.ly/ot2uj  
+- big data is not just for big business. on how #bigdata is being deployed for small businesses: http://bddy.me/1bzukb3  @cxotodayalerts #smb  
 
+The first feature would produce the following total count for each word:
 
+	#analytics  1
+	#bigdata 	3
+	#kdn 	1
+	#smb 	1
+	@cxotodayalerts 	1
+	@lavanyarathnam 	1
+	and 	1
+	answer  	1
+	astrazeneca 	1
+	being 	1
+	big 	2
+	business. 	1 
+	businesses: 	1
+	data 	1
+	deployed 	1
+	effective 	1
+	end 	1
+	finally 	1
+	for 	2
+	healthcare 	1
+	how 	1
+	http://bddy.me/1bzukb3  	1
+	http://ow.ly/o8gt3  	1
+	http://ow.ly/ot2uj  	1
+	interview: 	1
+	is  	3
+	just 	1
+	not 	1
+	of 		1
+	on 		2
+	poverty? 	1
+	promise 	1
+	small 	1
+	the  	2
+	to  	1
+	wang,	1
+	xia 	1
 
+while the second feature would produce the following output:
 
+	11
+	12.5
+	14
 
-The first part of the coding challenge is to implement your own version of Word Count that counts all the words from the text files contained in a directory named `wc_input` and outputs the counts (in alphabetical order) to a file named `wc_result.txt`, which is placed in a directory named `wc_output`.
+since the number of unique words in each tweet is 11, 14, and 17 respectively.  In this challenge we have made a few assumptions to make things simpler:
 
+- Each tweet only contains lowercase letters, numbers, and ASCII characters like ':', '@', and '#'.
+- A word is defined as anything separated by whitespace. 
 
+Note that the output of the first feature is outputted in order according to the [ASCII Code](http://www.ascii-code.com).  Also recall, that the median of a set with an even number of items is the mean of the two middle elements (e.g. the median of {11, 14} is 12.5).
 
-
-
-Another common problem is the Running Median - which keeps track of the median for a stream of numbers, updating the median for each new number.  The second part of the coding challenge is to implement a running median for the number of words per line of text.  Consider each line in a text file as a new stream of words, and find the median number of words per line, up to that point (i.e. the median for that line and all the previous lines).  For example, the first line of the passage
-
-> So call a big meeting,  
-Get everyone out out,  
-Make every Who holler,  
-Make every Who shout shout.  
-
-has 5 words so the running median for the first line is simply 5.  Since the second line has 4 words, the running median for the first two lines is the median of {4, 5} = 4.5 (since the median of an even set of numbers is defined as the mean of the middle two elements after sorting).  After three lines, the running median would be the median of {4, 4, 5} = 4, and after all four lines the running median is the median of {4, 4, 5, 5} = 4.5.  Thus, the correct output for the running median program for the above passage is:
-
-	5.0  
-	4.5  
-	4.0  
-	4.5  
+## Details of Implementation
 
 We'd like you to implement your own version of this running median that calculates the median number of words per line, for each line of the text files in the `wc_input` directory.  If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named `hello.txt` should be processed before a file named `world.txt`.  The resulting running median for each line should then be outputted to a text file named `med_result.txt` in the `wc_output` directory.
 
