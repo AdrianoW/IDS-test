@@ -114,6 +114,8 @@ Here are some common questions we've received.  If you have additional questions
 * *Which Github link should I submit?*  
 You should submit the URL for the top-level root of your repository.  For example, this repo would be submitted by copying the URL `https://github.com/InsightDataScience/cc-example` into the appropriate field on the application.  Please do NOT try to submit your coding challenge using a pull request, which will make your source code publicly available.  
 
+* *May I use R or other analytics programming languages to solve the challenge?*  
+While you may use any programming language to complete the challenge, it's important that your implementation scales to handle large amounts of data.  Many applicants have found that R is unable to process data in a scalable fashion, so it may be more practical to use another language.  
 
 
 
