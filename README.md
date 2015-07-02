@@ -74,9 +74,10 @@ Note that the output of the first feature is outputted in order, according to th
 We'd like you to implement your own version of these two features.  However, we don't want this challenge to focus on the relatively uninteresting data cleaning and munging.  Normally, tweets can be obtained through Twitter's API in JSON format and the "payload" text is parsed, but you may assume that this has already been done and written to a file named 'tweets.txt' inside a directory named 'tweet_input'.  For simplicity, this file 'tweets.txt' will only contain lowercase letters, numbers, and ASCII characters (e.g. common punctuation and characters like '@', and '#').  Additionally, 'tweets.txt' will have the content of each tweet on a newline:
 
 tweets.txt
-	Contents of first tweet
-	Contents of second tweet
-	Contents of third tweet
+
+	Contents of first tweet  
+	Contents of second tweet  
+	Contents of third tweet  
 
  for each line of the text files in the `wc_input` directory.  If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named `hello.txt` should be processed before a file named `world.txt`.  The resulting running median for each line should then be outputted to a text file named `med_result.txt` in the `wc_output` directory.
 
