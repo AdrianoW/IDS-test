@@ -117,6 +117,12 @@ You should submit the URL for the top-level root of your repository.  For exampl
 * *May I use R or other analytics programming languages to solve the challenge?*  
 While you may use any programming language to complete the challenge, it's important that your implementation scales to handle large amounts of data.  Many applicants have found that R is unable to process data in a scalable fashion, so it may be more practical to use another language.  
 
+* *May I use distributed technologies like Hadoop or Spark?*  
+While you're welcome to use any language or technology, it will be tested on a single machine so there may not be a significant benefit to using these technologies prior to the program.  With that said, learning distributed systems would be a valuable skill for all data engineers.
+
+* *What sort of system should I use to run my program on (Windows, Linux, Mac)?*  
+You may write your solution on any system, but your code should be portable and work on all systems.  You should also specify your environment and system in your accompanying README file.  
+
 
 
 
