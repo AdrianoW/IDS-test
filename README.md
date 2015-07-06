@@ -127,7 +127,7 @@ You may write your solution on any system, but your code should be portable and 
 Please don't worry about punctuation for this challenge.  In theory, you could spend a lot of time in details related to natural language processing (NLP), but this isn't the intended focus for the challenge.  The only "punctuation" you need to worry about are whitespaces, which are the delimiters between words.  
 
 * *Can I use pre-built packages, modules, or libraries?* 
-Yes, you may use any publicly available package, module, or library as long as you document any dependencies in your accompanying README file.  When we review your submission, we will download these libraries and attempt to run your program.   This is why it's very important that you document any dependencies or system specific details in your accompanying README file.
+Yes, you may use any publicly available package, module, or library as long as you document any dependencies in your accompanying README file.  When we review your submission, we will download these libraries and attempt to run your program.   This is why it's very important that you document any dependencies or system specific details in your accompanying README file.  However, you should always ensure that the module you're using works efficiently for the specific use-case in the challenge, many libraries are not designed for large amounts of data.
 
 * *What should the format of the word count be?*  
 Please try to match the above example, by listing the words in **alphabetical** order, with whitespace between the word and count, and each word separated by a newline.
@@ -135,6 +135,6 @@ Please try to match the above example, by listing the words in **alphabetical** 
 * *How will the coding challenge be evaluated?*  
 Generally, we will evaluate your coding challenge with a testing suite that provides a variety of input tweets and checks the corresponding output.  This suite will attempt to use your 'run.sh' and is fairly tolerant to different output formats.  Of course, there are many aspects that cannot be tested by our suite, so each submission will be reviewed by a person as well. 
 
-* *How long will it take for me to hear back from you?*  
+* *How long will it take for me to hear back from you about my submission?*  
 We receive hundreds of submissions and try to evaluate them all in a timely manner.  We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, you may email us at info@insightdataengineering.com.  
 
