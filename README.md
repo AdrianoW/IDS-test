@@ -129,6 +129,9 @@ Please don't worry about punctuation for this challenge.  In theory, you could s
 * *Can I use pre-built packages, modules, or libraries?*   
 Yes, you may use any publicly available package, module, or library as long as you document any dependencies in your accompanying README file.  When we review your submission, we will download these libraries and attempt to run your program.   This is why it's very important that you document any dependencies or system specific details in your accompanying README file.  However, you should always ensure that the module you're using works efficiently for the specific use-case in the challenge, many libraries are not designed for large amounts of data.
 
+* *Do I need to use multi-threading?*   
+No, your solution doesn't necessarily need to include multi-threading - there are many solutions that don't require multiple threads/cores or any distributed systems.  
+
 * *What should the format of the word count be?*  
 Please try to match the above example, by listing the words in **alphabetical** order according the the ASCII ordering, with whitespace between the word and count, and each word separated by a newline.
 
