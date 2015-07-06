@@ -130,7 +130,7 @@ Please don't worry about punctuation for this challenge.  In theory, you could s
 Yes, you may use any publicly available package, module, or library as long as you document any dependencies in your accompanying README file.  When we review your submission, we will download these libraries and attempt to run your program.   This is why it's very important that you document any dependencies or system specific details in your accompanying README file.  However, you should always ensure that the module you're using works efficiently for the specific use-case in the challenge, many libraries are not designed for large amounts of data.
 
 * *What should the format of the word count be?*  
-Please try to match the above example, by listing the words in **alphabetical** order, with whitespace between the word and count, and each word separated by a newline.
+Please try to match the above example, by listing the words in **alphabetical** order according the the ASCII ordering, with whitespace between the word and count, and each word separated by a newline.
 
 * *What should the precision for the output of the median be?*  
 For simplicity, please output the running median as a double with only 2 digits after the decimal (i.e. 2.00 instead of 2).  In the event that you need to round, simply truncate the answer (i.e. 2/3 should be 0.66).  The median for each new tweet of text should be separated by newlines as shown in the example above.
@@ -138,7 +138,7 @@ For simplicity, please output the running median as a double with only 2 digits 
 * *Do I need to account for complicated Unicode characters?*  
 No, you may assume that all of the characters are conventional, ASCII characters.
 
-* *Should I check if the files in the input directory are text files or non-text files(binary)?*
+* *Should I check if the files in the input directory are text files or non-text files(binary)?*  
 No, for simplicity you may assume that all of the files in the input directory are standard text files.  
 
 * *Do I need separate programs for different features?*  
