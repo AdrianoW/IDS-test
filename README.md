@@ -132,6 +132,24 @@ Yes, you may use any publicly available package, module, or library as long as y
 * *What should the format of the word count be?*  
 Please try to match the above example, by listing the words in **alphabetical** order, with whitespace between the word and count, and each word separated by a newline.
 
+* *What should the precision for the output of the median be?*  
+For simplicity, please output the running median as a double with only 2 digits after the decimal (i.e. 2.00 instead of 2).  In the event that you need to round, simply truncate the answer (i.e. 2/3 should be 0.66).  The median for each new tweet of text should be separated by newlines as shown in the example above.
+
+* *Do I need to account for complicated Unicode characters?*  
+No, you may assume that all of the characters are conventional, ASCII characters.
+
+* *Should I check if the files in the input directory are text files or non-text files(binary)?*
+No, for simplicity you may assume that all of the files in the input directory are standard text files.  
+
+* *Do I need separate programs for different features?*  
+You may use a single combined program or several programs, as long as they are all executed by the `run.sh` script.
+
+* *Can I use an IDE like Eclipse to write my program?*  
+Yes, you can use what ever tools you want -  as long as your `run.sh` script correctly runs the relevant target files and creates the `ft1.txt` and `ft2.txt` files in the `tweet_output` directory.
+
+* *What should be in the `tweet_input` directory?*  
+You can put any text file you want in the directory.  In fact, this could be quite helpful for testing your solutions.
+
 * *How will the coding challenge be evaluated?*  
 Generally, we will evaluate your coding challenge with a testing suite that provides a variety of input tweets and checks the corresponding output.  This suite will attempt to use your 'run.sh' and is fairly tolerant to different output formats.  Of course, there are many aspects that cannot be tested by our suite, so each submission will be reviewed by a person as well. 
 
