@@ -23,9 +23,25 @@ IDS - Coding Challenge
   - Twitter key configuration
   - more info inside the file 
 
-## Dependencies
-tweepy
+### Setup and dependencies
+You need a twitter developer account to access the streamming api. Follow the steps below to get the info needed:
 
-## Run Streaming
-in the root directory of *this* repository, execute
+- Create a twitter account if you do not already have one.
+- Go to https://apps.twitter.com/ and log in with your twitter credentials.
+- Click "Create New App"
+- Fill out the form, agree to the terms, and click "Create your Twitter application"
+- In the next page, click on "API keys" tab, and copy your "API key" and "API secret".
+- Scroll down and click "Create my access token", and copy your "Access token" and "Access token secret".
+- fill the fields on src/config.yml 
+  - ctkey, csecret: api key, api secret
+  - atoken,asecret: acess token, access secret
+
+The modules used by tweepy work better in Python2.7.9 (ssl part).
+To install the dependencies, execute in the project base folder:
+
+    pip install --upgrade pip
+    pip install -r requirements.txt
+
+### Run Streaming
+On the base directory of *this* repository, execute
 `python src/stream.py`. Stop with CTRL+C (keyboard)
