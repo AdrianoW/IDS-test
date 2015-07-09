@@ -1,3 +1,4 @@
 src/config.yaml
 .idea*
 *.pyc
+tweet_output/*
