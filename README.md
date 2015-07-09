@@ -44,7 +44,7 @@ To install the dependencies, execute in the project base folder:
 
 ### Run Streaming
 On the base directory of *this* repository, execute
-`python src/stream.py`. Stop with CTRL+C (keyboard)
+`python src/stream.py` or `./run_stream.sh`. Stop with CTRL+C (keyboard)
 
 ### Streaming errors
 
