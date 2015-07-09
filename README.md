@@ -45,3 +45,7 @@ To install the dependencies, execute in the project base folder:
 ### Run Streaming
 On the base directory of *this* repository, execute
 `python src/stream.py`. Stop with CTRL+C (keyboard)
+
+### Streaming errors
+
+- 401 - unauthorized: check the params and the clock settings of your computer. 
