@@ -1,0 +1,32 @@
+#
+#  stream.py config file
+#
+
+# keys for the api
+ckey: 'xxxx'
+csecret: 'xxx'
+atoken: 'xxx'
+asecret: 'xxxx'
+
+# keys to be monitored
+monitored_tags:
+  #- curitiba # my city
+  - teenchoice
+
+# where to store the tweets gathered from the stream
+# if not present, wont save
+twitter_cache: './tweet_output/tweet_cache.txt'
+
+# where to store only the content lines
+# if not present, won't save
+twitter_lines: './tweet_output/tweets.txt'
+
+# output file of the program with count and words
+output_count: './tweet_output/stream_count.txt'
+output_median: './tweet_output/stream_median.txt'
+
+# number of tweets to flush each time
+flush_period: 20
+
+# logging level - info or debug
+logging_level: info

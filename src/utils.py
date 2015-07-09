@@ -1,4 +1,4 @@
-__author__ = 'adrianwoalmeida'
+# -*- coding: utf-8 -*-
 """
     Util functions to ease development
 """
@@ -7,11 +7,7 @@ import argparse
 import traceback
 import logging
 
-# get logger instance
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s %(levelname)-8s %(message)s',
-                    datefmt='%a, %d %b %Y %H:%M:%S')
-
+__author__ = 'adrianwoalmeida'
 
 def parse_args():
     """
@@ -60,3 +56,48 @@ def setup_log(logger_name="mylogger", log_filename=None):
         logger.addHandler(fh)
 
     return logger
+
+def setup_log(level=None):
+    """
+    Initiate logging according to param
+    :param level: info or debug
+    :return: None
+    """
+    # get logger instance with appropriate logging level
+    if level == 'info':
+        level = logging.INFO
+    else:
+        level = logging.DEBUG
+
+    logging.basicConfig(level=level,
+                    format='%(asctime)s %(levelname)-8s %(message)s',
+                    datefmt='%a, %d %b %Y %H:%M:%S')
+
+
+class BaseProcessing(object):
+    """
+    This is the base class of the processor.
+    This should be inherited and have the functions implemented
+    """
+    def process_tweet(self, tweet):
+        """
+        This should be implemented for processing a line of tweet.
+        :param tweet: usually list with tweet words
+        :return: none
+        """
+        raise NotImplementedError('You should implement process_tweet')
+
+    def write_results(self):
+        """
+        This should write the output of the processing to a file
+        :return:
+        """
+        raise NotImplementedError('You should implement write_results')
+
+    def print_partial(self):
+        """
+        This should print a partial processing to the screen
+        :return:
+        """
+        raise NotImplementedError('You should implement print_partial')
+

@@ -1,28 +1,37 @@
+# -*- coding: utf-8 -*-
 # example of program that calculates the median number of unique words per tweet.
 from tweet_reader import TweetFile
 from bisect import insort
 import sys
-from utils import parse_args, get_error
+from utils import parse_args, get_error, BaseProcessing, setup_log
 import logging
 
 
-class MedianFinder(object):
+class MedianFinder(BaseProcessing):
     """
         Keeps the list, add values and calculate median value
     """
-    def __init__(self):
+    def __init__(self, output):
         """ Init the structure """
         self.vals = []
+        self.output = open(output, 'w')
 
-    def add(self, val):
+    def process_tweet(self, tweet):
         """
         Add the element into the ordered list
-        :param val: value to be inserted
+        :param tweet: line with parsed words
         :return None
         """
-        insort(self.vals, val)
+        insort(self.vals, len(set(tweet)))
 
-    def median(self):
+    def write_results(self):
+        """
+        Write current median to file
+        :return:
+        """
+        self.output.write('%.2f\n' % self.print_partial())
+
+    def print_partial(self):
         """
         Calculate the median
         :return the median
@@ -41,7 +50,7 @@ class MedianFinder(object):
 
 def main(args):
     """
-    calulate the median of number of unique words
+    Calculate the median of number of unique words
     :return:
     """
     logging.info('starting median_unique')
@@ -49,20 +58,17 @@ def main(args):
         logging.error('no output file defined')
         sys.exit(-1)
 
-    # open the output file
-    with open(args.output_file, 'w') as out:
-        # init vars
-        mf = MedianFinder()
+    # init vars
+    mf = MedianFinder(args.output_file)
 
-        # read file bringing the word list
-        tfile = TweetFile(args.input_file)
-        for words in tfile.get_words():
-            # make an unique set of words and get its length
-            mf.add(len(set(words)))
+    # read file bringing the word list
+    tfile = TweetFile(args.input_file)
+    for words in tfile.get_words():
+        # make an unique set of words and get its length
+        mf.process_tweet(words)
 
-            # save to file the current median
-            out.write('%.2f\n' % mf.median())
-        logging.debug('Finished writing to %s' % args.output_file)
+        # save to file the current median
+        mf.write_results()
 
     # log the program is finished
     logging.info('program finished')
@@ -72,8 +78,8 @@ if __name__ == '__main__':
     args = parse_args()
     # run logging any error
     try:
+        setup_log()
         main(args)
     except:
         logging.error(get_error())
         logging.info('Exiting. Bye')
-
