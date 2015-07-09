@@ -28,4 +28,4 @@ tweepy
 
 ## Run Streaming
 in the root directory of *this* repository, execute
-`python src/stream.py`
+`python src/stream.py`. Stop with CTRL+C (keyboard)
